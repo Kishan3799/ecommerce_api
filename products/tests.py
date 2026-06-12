@@ -6,7 +6,7 @@ from .models import Category, Product
 class ProductAPITestCase(APITestCase):
     def setUp(self):
         """Run before each test"""
-        self.user = User.objects.create.user(
+        self.user = User.objects.create_user(
             username = 'testuser',
             password = 'testpass123'
         )
