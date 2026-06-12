@@ -1,0 +1,718 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$lBWct8yZfNfcadTGAW0D6b$6TUHgk7MMhBNF9dGRtDh6VO4La1nrWMJR1Bi6svOZXU=",
+    "last_login": "2026-05-16T05:17:18.895Z",
+    "is_superuser": true,
+    "username": "KishanEcom",
+    "first_name": "",
+    "last_name": "",
+    "email": "kishanecom123@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-05-13T17:04:05.873Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$CuT8HgQpqj9alS2H1bIB2w$yUwgQWrqyvSIfJ/AUJH0rLFF29uahmgV/KcPFefTuR4=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "testuser",
+    "first_name": "Test",
+    "last_name": "User",
+    "email": "test@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-23T18:07:33.721Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ne0rg7gdhja4dxb2iatssp2vaf285i3z",
+  "fields": {
+    "session_data": ".eJxVjDkOwjAURO_iGllxvEJJzxmsvwUHUCzFSYW4O4mUAsqZ92beKsO6lLw2mfPI6qKMOv12CPSUaQf8gOleNdVpmUfUu6IP2vStsryuh_t3UKCVbe0TxoCShG00bDoKfd8hhEB-iBZJYkI2JkbwiGeXaHCeyFkPbgtO1OcL7KY4NA:1wO7Oo:nY5MAEIDK8amz_fuEHAk29mLrYPyKV4t9zUPABnS5f8",
+    "expire_date": "2026-05-30T05:17:18.900Z"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 1,
+  "fields": {
+    "name": "Eco-Friendly Bamboo Kitchenware",
+    "slug": "eco-friendly-bamboo-kitchenware",
+    "description": "Upgrade your home with our sustainable, durable, and stylish bamboo kitchenware. From cutting boards to utensil sets, find natural alternatives that loo",
+    "created_at": "2026-05-15T17:40:44.683Z"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 2,
+  "fields": {
+    "name": "Urban Streetwear Hoodies",
+    "slug": "urban-streetwear-hoodies",
+    "description": "Discover our collection of high-quality urban streetwear hoodies, featuring bold designs and comfortable fits. Explore oversized styles, graphic prints, and limited-edition drops to elevate your streetwear wardrobe.",
+    "created_at": "2026-05-15T17:41:36.496Z"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 3,
+  "fields": {
+    "name": "Noise-Canceling Wireless Earbuds",
+    "slug": "noise-canceling-wireless-earbuds",
+    "description": "Experience sound isolation with our premium noise-canceling wireless earbuds. Perfect for commuting, working, or gym sessions. Shop top brands with long-lasting battery life and crystal-clear audio quality.",
+    "created_at": "2026-05-15T17:42:14.495Z"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 4,
+  "fields": {
+    "name": "Organic Facial Serums",
+    "slug": "organic-facial-serums",
+    "description": "Nourish your skin with our curated collection of organic facial serums. Designed for hydration, brightening, and anti-aging, these plant-based formulas provide radiant results for all skin types.",
+    "created_at": "2026-05-15T17:42:55.483Z"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 5,
+  "fields": {
+    "name": "Adjustable Dumbbells & Weights",
+    "slug": "adjustable-dumbbells-weights",
+    "description": "Save space and enhance your home gym with our durable adjustable dumbbells. Perfect for lifting, toning, and HIIT workouts, ranging from light to heavy weight sets.",
+    "created_at": "2026-05-15T17:43:14.930Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "name": "EcoLeaf Premium Bamboo Cutting Board with Waste Groove",
+    "slug": "ecoleaf-premium-bamboo-cutting-board-waste-groove",
+    "description": "A durable, antimicrobial 100% natural bamboo cutting board (34x24 cm) featuring a deep juice groove to catch liquids, making prep work clean and sustainable. Perfect for vegetables, meat, and cheese.",
+    "price": "495.00",
+    "stock": 48,
+    "image": "",
+    "is_active": true,
+    "created_at": "2026-05-15T17:46:59.316Z",
+    "updated_at": "2026-05-23T18:13:19.146Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 2,
+  "fields": {
+    "category": 1,
+    "name": "Artisan Handwoven Bamboo Serving Tray (Large)",
+    "slug": "artisan-handwoven-bamboo-serving-tray-large",
+    "description": "Handcrafted from sustainable bamboo, this rustic yet modern tray is durable and lightweight. Perfect for serving tea, coffee, or snacks to guests. Features sturdy handles and a smooth natural finish.",
+    "price": "850.00",
+    "stock": 40,
+    "image": "",
+    "is_active": true,
+    "created_at": "2026-05-15T17:47:56.345Z",
+    "updated_at": "2026-05-15T17:47:56.345Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 3,
+  "fields": {
+    "category": 1,
+    "name": "The Bamboo Bae Eco-Friendly Utensil Set (7-Piece)",
+    "slug": "bamboo-bae-eco-friendly-utensil-set-7pcs",
+    "description": "A complete 7-piece cooking tool set including spatulas, spoons, and a holder, made from natural, heat-resistant bamboo. Non-stick friendly and biodegradable—a complete sustainable cooking upgrade.",
+    "price": "449.00",
+    "stock": 49,
+    "image": "",
+    "is_active": true,
+    "created_at": "2026-05-15T17:49:09.442Z",
+    "updated_at": "2026-05-15T17:49:09.442Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 4,
+  "fields": {
+    "category": 5,
+    "name": "Lifelong Adjustable Dumbbell for Home Gym - 1.5kg to 16kg Easy Weight Adjustment",
+    "slug": "lifelong-adjustable-dumbbell-16kg",
+    "description": "Designed as an efficient, space-saving alternative to a full dumbbell rack, this set allows you to adjust weights smoothly. It accommodates beginners and growing fitness journeys with an ergonomic, anti-slip design and durable materials.",
+    "price": "59996999.00",
+    "stock": 50,
+    "image": "",
+    "is_active": true,
+    "created_at": "2026-05-16T05:21:57.104Z",
+    "updated_at": "2026-05-16T05:21:57.104Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 5,
+  "fields": {
+    "category": 5,
+    "name": "Cult 3in1 Adjustable Dumbbell Set",
+    "slug": "cult-3in1-adjustable-dumbbells",
+    "description": "A highly versatile multi-gym tool. This equipment quickly transforms between a dumbbell (1.5–18kg), a kettlebell (1–10kg), and a barbell (2–19kg), making it perfect for full-body workouts in small spaces.",
+    "price": "10999.00",
+    "stock": 29,
+    "image": "",
+    "is_active": true,
+    "created_at": "2026-05-16T05:23:08.156Z",
+    "updated_at": "2026-05-16T05:23:08.156Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 6,
+  "fields": {
+    "category": 5,
+    "name": "Corength by Decathlon Weight Training Adjustable Dumbbell Kit - 20 kg",
+    "slug": "corength-decathlon-adjustable-dumbbell-kit-20kg",
+    "description": "Developed by coaches, this classic kit is ideal for starting strength training at home. It includes two short threaded bars, safety collars, and a total of twelve cast-iron weight plates. The plates can be arranged across the bars to dial in your preferred weight.",
+    "price": "8199.00",
+    "stock": 59,
+    "image": "",
+    "is_active": true,
+    "created_at": "2026-05-16T05:24:32.318Z",
+    "updated_at": "2026-05-16T05:24:32.318Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 7,
+  "fields": {
+    "category": 3,
+    "name": "Bose QuietComfort Ultra Earbuds (2nd Gen)",
+    "slug": "bose-quietcomfort-ultra-earbuds-gen-2",
+    "description": "Featuring world-class noise cancellation and custom spatial audio, these earbuds create a highly immersive listening experience. They boast superior all-day comfort, customizable fit tips, and rich, full-bodied sound that adapts automatically to your environment.",
+    "price": "22999.00",
+    "stock": 99,
+    "image": "",
+    "is_active": true,
+    "created_at": "2026-05-16T05:26:30.927Z",
+    "updated_at": "2026-05-16T05:26:30.927Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 8,
+  "fields": {
+    "category": 3,
+    "name": "Apple AirPods 4",
+    "slug": "apple-airpods-4-with-anc",
+    "description": "The redesigned AirPods 4 now feature active noise cancellation to help reduce environmental noise like city traffic and HVAC systems. They offer clearer calls with voice isolation, personalized spatial audio, and an exceptional fit for the Apple ecosystem.",
+    "price": "17000.00",
+    "stock": 50,
+    "image": "",
+    "is_active": true,
+    "created_at": "2026-05-16T05:27:29.716Z",
+    "updated_at": "2026-05-16T05:27:29.717Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 9,
+  "fields": {
+    "category": 3,
+    "name": "realme Buds Air 8",
+    "slug": "realme-buds-air-8",
+    "description": "These earbuds deliver studio-quality Hi-Res audio and up to 55dB Smart Active Noise Cancellation to effectively block out background chatter. With dual dynamic bass drivers, 360-degree spatial audio, and a massive 58-hour total battery life, they are a highly feature-packed option.",
+    "price": "3599.00",
+    "stock": 69,
+    "image": "",
+    "is_active": true,
+    "created_at": "2026-05-16T05:28:03.555Z",
+    "updated_at": "2026-05-16T05:28:03.555Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 10,
+  "fields": {
+    "category": 4,
+    "name": "Himalaya Dark Spot Clearing Turmeric Face Serum",
+    "slug": "himalaya-dark-spot-clearing-turmeric-face-serum",
+    "description": "A potent Ayurvedic-inspired formula containing organically sourced Turmeric, Licorice, 2% Niacinamide, and 10% Glycolic Acid. It works to reduce dark spots, combat free radicals, and improve the skin's natural barrier.",
+    "price": "279.00",
+    "stock": 119,
+    "image": "",
+    "is_active": true,
+    "created_at": "2026-05-16T05:29:19.905Z",
+    "updated_at": "2026-05-16T05:29:19.905Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 11,
+  "fields": {
+    "category": 4,
+    "name": "AXIS-Y Dark Spot Correcting Glow Serum",
+    "slug": "axis-y-dark-spot-correcting-glow-serum",
+    "description": "A lightweight, non-sticky Korean skincare serum enriched with 5% Niacinamide and plant-derived Squalane. It corrects dark spots, minimizes the appearance of pores, and soothes sensitive skin while deeply hydrating.",
+    "price": "449.00",
+    "stock": 59,
+    "image": "",
+    "is_active": true,
+    "created_at": "2026-05-16T05:30:06.252Z",
+    "updated_at": "2026-05-16T05:30:06.252Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 12,
+  "fields": {
+    "category": 4,
+    "name": "TNW Natural Wash Organic Glow Face Serum",
+    "slug": "tnw-natural-wash-organic-glow-face-serum",
+    "description": "Infused with natural ingredients like Kumkumadi, Licorice, and Turmeric. This day-and-night serum reduces pigmentation and evens out your skin tone while instantly hydrating the face and leaving a natural lustre.",
+    "price": "499.00",
+    "stock": 79,
+    "image": "",
+    "is_active": true,
+    "created_at": "2026-05-16T05:30:45.427Z",
+    "updated_at": "2026-05-16T05:30:45.427Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 13,
+  "fields": {
+    "category": 2,
+    "name": "Don't Need A Reason\" Unisex Oversized Hoodie",
+    "slug": "dont-need-a-reason-acid-black-hoodie",
+    "description": "An acid-washed black heavyweight fleece cotton hoodie with drop shoulders and an edgy, rebellious statement graphic. Built for a relaxed, boxy street style.",
+    "price": "1999.00",
+    "stock": 0,
+    "image": "",
+    "is_active": true,
+    "created_at": "2026-05-16T05:32:29.640Z",
+    "updated_at": "2026-05-16T05:32:29.640Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 14,
+  "fields": {
+    "category": 2,
+    "name": "Mischief 320 GSM Heavyweight Graphic Hoodie",
+    "slug": "mischief-320-gsm-heavyweight-graphic-hoodie",
+    "description": "A premium 100% super-combed cotton, light pink urban streetwear hoodie. Features a playful front graphic, spacious kangaroo pocket, and ribbed hems.",
+    "price": "1199.00",
+    "stock": 60,
+    "image": "",
+    "is_active": true,
+    "created_at": "2026-05-16T05:33:24.301Z",
+    "updated_at": "2026-05-16T05:33:24.301Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 15,
+  "fields": {
+    "category": 2,
+    "name": "Snitch \"No Skips\" Graphic Hoodie",
+    "slug": "snitch-no-skips-graphic-hoodie",
+    "description": "A light blue cotton-poly blend hoodie featuring a music-inspired retro graphic print. Styled with a classic kangaroo pocket and an adjustable hood for effortless streetwear layering.",
+    "price": "1899.00",
+    "stock": 89,
+    "image": "",
+    "is_active": true,
+    "created_at": "2026-05-16T05:34:03.617Z",
+    "updated_at": "2026-05-16T05:34:03.617Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "testuser"
+    ],
+    "status": "PENDING",
+    "total_amount": "990.00",
+    "shipping_address": "123 Main St, Delhi",
+    "created_at": "2026-05-23T18:13:19.138Z",
+    "updated_at": "2026-05-23T18:13:19.154Z"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "product": 1,
+    "quantity": 2,
+    "price": "495.00"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-05-15T17:40:44.687Z",
+    "user": [
+      "KishanEcom"
+    ],
+    "content_type": [
+      "products",
+      "category"
+    ],
+    "object_id": "1",
+    "object_repr": "Eco-Friendly Bamboo Kitchenware",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-05-15T17:41:36.497Z",
+    "user": [
+      "KishanEcom"
+    ],
+    "content_type": [
+      "products",
+      "category"
+    ],
+    "object_id": "2",
+    "object_repr": "Urban Streetwear Hoodies",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-05-15T17:42:14.498Z",
+    "user": [
+      "KishanEcom"
+    ],
+    "content_type": [
+      "products",
+      "category"
+    ],
+    "object_id": "3",
+    "object_repr": "Noise-Canceling Wireless Earbuds",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-05-15T17:42:55.485Z",
+    "user": [
+      "KishanEcom"
+    ],
+    "content_type": [
+      "products",
+      "category"
+    ],
+    "object_id": "4",
+    "object_repr": "Organic Facial Serums",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-05-15T17:43:14.932Z",
+    "user": [
+      "KishanEcom"
+    ],
+    "content_type": [
+      "products",
+      "category"
+    ],
+    "object_id": "5",
+    "object_repr": "Adjustable Dumbbells & Weights",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-05-15T17:46:59.318Z",
+    "user": [
+      "KishanEcom"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "1",
+    "object_repr": "EcoLeaf Premium Bamboo Cutting Board with Waste Groove",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-05-15T17:47:56.347Z",
+    "user": [
+      "KishanEcom"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "2",
+    "object_repr": "Artisan Handwoven Bamboo Serving Tray (Large)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-05-15T17:49:09.443Z",
+    "user": [
+      "KishanEcom"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "3",
+    "object_repr": "The Bamboo Bae Eco-Friendly Utensil Set (7-Piece)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-05-16T05:21:57.106Z",
+    "user": [
+      "KishanEcom"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "4",
+    "object_repr": "Lifelong Adjustable Dumbbell for Home Gym - 1.5kg to 16kg Easy Weight Adjustment",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-05-16T05:23:08.159Z",
+    "user": [
+      "KishanEcom"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "5",
+    "object_repr": "Cult 3in1 Adjustable Dumbbell Set",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-05-16T05:24:32.322Z",
+    "user": [
+      "KishanEcom"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "6",
+    "object_repr": "Corength by Decathlon Weight Training Adjustable Dumbbell Kit - 20 kg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-05-16T05:26:30.929Z",
+    "user": [
+      "KishanEcom"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "7",
+    "object_repr": "Bose QuietComfort Ultra Earbuds (2nd Gen)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-05-16T05:27:29.719Z",
+    "user": [
+      "KishanEcom"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "8",
+    "object_repr": "Apple AirPods 4",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-05-16T05:28:03.557Z",
+    "user": [
+      "KishanEcom"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "9",
+    "object_repr": "realme Buds Air 8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-05-16T05:29:19.908Z",
+    "user": [
+      "KishanEcom"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "10",
+    "object_repr": "Himalaya Dark Spot Clearing Turmeric Face Serum",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-05-16T05:30:06.255Z",
+    "user": [
+      "KishanEcom"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "11",
+    "object_repr": "AXIS-Y Dark Spot Correcting Glow Serum",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-05-16T05:30:45.429Z",
+    "user": [
+      "KishanEcom"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "12",
+    "object_repr": "TNW Natural Wash Organic Glow Face Serum",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-05-16T05:32:29.642Z",
+    "user": [
+      "KishanEcom"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "13",
+    "object_repr": "Don't Need A Reason\" Unisex Oversized Hoodie",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-05-16T05:33:24.303Z",
+    "user": [
+      "KishanEcom"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "14",
+    "object_repr": "Mischief 320 GSM Heavyweight Graphic Hoodie",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-05-16T05:34:03.619Z",
+    "user": [
+      "KishanEcom"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "15",
+    "object_repr": "Snitch \"No Skips\" Graphic Hoodie",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+}
+]
