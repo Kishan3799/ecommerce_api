@@ -7,12 +7,13 @@ on:
     branches: [ main ]
 
 jobs:
-  test: 
+  test:
     runs-on: ubuntu-latest
+
     services:
       postgres:
-        image: postgres: 15
-        env: 
+        image: postgres:15
+        env:
           POSTGRES_DB: test_db
           POSTGRES_USER: test_user
           POSTGRES_PASSWORD: test_pass
@@ -23,26 +24,31 @@ jobs:
           --health-retries 5
         ports:
           - 5432:5432
-      
-      steps:
-      - name: Checkout code 
-        uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.12'
-      
-      - name: Install dependencies
-        run: | 
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
 
-      - name: Run tests
-        env:
-          SECRET_KEY: test-secret-key-for-ci-only
-          DEBUG: True
-          DATABASE_URL: postgresql://test_user:test_pass@localhost:5432/test_db
-        run: python manage.py test --verbosity=2
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12'
 
-        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run migrations
+      env:
+        SECRET_KEY: test-secret-key-for-ci-only
+        DEBUG: True
+        DATABASE_URL: postgresql://test_user:test_pass@localhost:5432/test_db
+      run: python manage.py migrate
+
+    - name: Run tests
+      env:
+        SECRET_KEY: test-secret-key-for-ci-only
+        DEBUG: True
+        DATABASE_URL: postgresql://test_user:test_pass@localhost:5432/test_db
+      run: python manage.py test --verbosity=2
