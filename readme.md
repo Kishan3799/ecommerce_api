@@ -1,6 +1,8 @@
 # E-Commerce Backend API
 
-A production-grade REST API built with Django REST Framework.
+![Django CI](https://github.com/Kishan3799/ecommerce_api/actions/workflows/django.yml/badge.svg)
+
+A production-grade REST API built with Django REST Framework..
 
 ## Features
 - JWT Authentication
