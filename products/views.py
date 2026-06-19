@@ -11,8 +11,7 @@ from .serializers import (
     ProductReviewSerializer
 )
 from django.core.cache import cache
-from django_ratelimit.decorators import ratelimit
-from django.utils.decorators import method_decorator
+from django.conf import settings  # ← Add this
 
 class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
@@ -46,7 +45,6 @@ class ProductViewSet(viewsets.ModelViewSet):
         """Add a review to a product"""
         product = self.get_object()
         
-        # Check if user already reviewed this product
         if ProductReview.objects.filter(product=product, user=request.user).exists():
             return Response(
                 {'error': 'You have already reviewed this product'},
@@ -91,15 +89,9 @@ class ProductViewSet(viewsets.ModelViewSet):
         products = self.queryset.filter(is_active=True)[:10]
         serializer = self.get_serializer(products, many=True)
         
-        cache.set(cache_key, serializer.data, timeout=CACHE_TTL)
+        cache.set(cache_key, serializer.data, timeout=getattr(settings, 'CACHE_TTL', 900))
         return Response(serializer.data)
-    
-    @method_decorator(ratelimit(key='ip', rate='100/h', method='POST'))
-    def create(self,request, *args, **kwargs):
-        """Override create to add rate limiting"""
-        return super().create(request, *args, **kwargs)
-    
-        
+
 
 class ProductReviewViewSet(viewsets.ModelViewSet):
     queryset = ProductReview.objects.select_related('product', 'user')
