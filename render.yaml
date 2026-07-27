@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: ecommerce-api
+    env: python
+    region: singapore
+    buildCommand: "chmod +x build.sh && ./build.sh"
+    startCommand: "gunicorn ecommerce_api.wsgi:application --bind 0.0.0.0:$PORT --workers 2 --timeout 120"
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: ecommerce_api.settings
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: false
+      - key: PYTHON_VERSION
+        value: 3.12.0
